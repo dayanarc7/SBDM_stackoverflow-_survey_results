@@ -36,6 +36,12 @@ Antes de realizar la creación de la bodega de datos se realizó la normalizaci�
 ######  PREGUNTA 1: ¿Cual es la participación total en las encuestas por país (resultado - 5 primeros países) ? <br/>
 [Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta1_encuestas_pais.sql) <br/>
 
-[Representación gráfica]: https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta1.png "Logo Title Text 2"
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta1.png "Logo Title Text 1")
 
+######  PREGUNTA 2:  ¿Cúal es el rango salarial según la experiencia de los desarrolladores que programan en Java? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow_survey_results/blob/master/Querys/Pregunta2_desarrolladores_experiencia_java.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta2.png "Logo Title Text 1")
 

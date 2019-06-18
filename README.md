@@ -92,3 +92,9 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta10.png "Logo Title Text 1")
+
+#####  PREGUNTA 10:  Comportamiento histórico ocupaciones Colombia <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta11_ocupaciones_colombia.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta11.png "Logo Title Text 1")

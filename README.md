@@ -1,2 +1,32 @@
-# SBDM_stackoverflow-_survey_results
-Trabajo final SBDM - stackoverflow survey results
+# Trabajo Final Sistemas de Bases de Datos Masivos 
+
+#### Para el desarrollo de este trabajo utilizaremos 7 conjuntos de datos masivos completamente libres y accesibles a través de BigQuery:
+
+Fh-bigquery.stackoverflow.survey_results_2011<br/>
+Fh-bigquery.stackoverflow.survey_results_2012<br/>
+Fh-bigquery.stackoverflow.survey_results_2013<br/>
+Fh-bigquery.stackoverflow.survey_results_2014<br/>
+Fh-bigquery.stackoverflow.survey_results_2015<br/>
+Fh-bigquery.stackoverflow.survey_results_2016<br/>
+Fh-bigquery.stackoverflow.survey_results_public_2017<br/>
+
+## I. Limpieza de los datos
+#### Se realizó la limpieza año a año como aparece en los scripts: 
+[Limpieza de datos 2011](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2011.sql)<br/>
+[Limpieza de datos 2012](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2012.sql)<br/>
+[Limpieza de datos 2013](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2013.sql)<br/>
+[Limpieza de datos 2014](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2014.sql)<br/>
+[Limpieza de datos 2015](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2015.sql)<br/>
+[Limpieza de datos 2016](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2016.sql)<br/>
+[Limpieza de datos 2017](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2017.sql)<br/>
+
+## II. Creación de la bodega de datos
+Antes de realizar la creación de la bodega de datos se realizó la normalización de las dimensiones que quedaron definidas. 
+
+[Normalización - Experiencia](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/3-normalizacion_experiencia.sql)<br/>
+[Normalización - Ingresos](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/3-normalizacion_ingresos.sql)<br/>
+[Normalización - Ubicación](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/3-normalizacion_ubicacion.sql)<br/>
+[Normalización - Tiempo](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/3-normalizacion_tiempo.sql)<br/>
+[Creacion de la bodega de datos](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/2-create_datawarehouse.sql)
+
+#### II-a. Consultas realizadas sobre la bodega de datos 

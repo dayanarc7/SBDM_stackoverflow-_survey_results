@@ -86,3 +86,9 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta9.png "Logo Title Text 1")
+
+#####  PREGUNTA 10:  Rangos de experiencia por pais  - Colombia Vs Estados Unidos <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta10_experiencia_pais_estadosunidos_vs_col.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta10.png "Logo Title Text 1")

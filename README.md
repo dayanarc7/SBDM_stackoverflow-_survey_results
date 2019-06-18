@@ -98,3 +98,9 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta11.png "Logo Title Text 1")
+
+#####  PREGUNTA 12:  Comportamiento histórico ocupaciones Estados Unidos <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta12_ocupaciones_estadosunidos.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta12.png "Logo Title Text 1")

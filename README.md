@@ -80,3 +80,9 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta8.png "Logo Title Text 1")
+
+#####  PREGUNTA 9:  ¿Cuáles son los rangos de experiencia por ocupación? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta9_experiencia_x_ocupacion.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta9.png "Logo Title Text 1")

@@ -104,3 +104,21 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta12.png "Logo Title Text 1")
+
+#####  PREGUNTA 13:   ¿Uso de lenguajes de programación en Suramerica en 2016? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta13_lenguajes_suramerica.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta13.png "Logo Title Text 1")
+
+#####  PREGUNTA 14:  ¿Ocupaciones en Suramerica en 2016? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta14_ocupaciones_suramerica.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta14.png "Logo Title Text 1")
+
+#####  PREGUNTA 15:  Cuáles son los 20 países con el promedio más alto de rango de ingresos <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sqll) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta15.png "Logo Title Text 1")

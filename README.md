@@ -1,6 +1,6 @@
 # Trabajo Final Sistemas de Bases de Datos Masivos 
 
-#### Para el desarrollo de este trabajo utilizaremos 7 conjuntos de datos masivos completamente libres y accesibles a través de BigQuery:
+#### Para el desarrollo de este trabajo se utilizaron 7 conjuntos de datos masivos completamente libres y accesibles a través de BigQuery, que corresponden a la encuesta anual que Stackoverflow realiza desde el 2011 a sus usuarios para observar y analizar tendencias en la industria de la tecnología y el software.
 
 Fh-bigquery.stackoverflow.survey_results_2011<br/>
 Fh-bigquery.stackoverflow.survey_results_2012<br/>
@@ -30,3 +30,12 @@ Antes de realizar la creación de la bodega de datos se realizó la normalizaci�
 [Creacion de la bodega de datos](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/2-create_datawarehouse.sql)
 
 #### II-a. Consultas realizadas sobre la bodega de datos 
+
+##### A continuación, se presentan 15 preguntas resueltas a través de consultas sobre el Datawarehouse. Estas preguntas fueron planteadas con base en las 6 dimensiones que conforman la bodega y con base en los datos que fueron normalizados. 
+
+######  PREGUNTA 1: ¿Cual es la participación total en las encuestas por país (resultado - 5 primeros países) ? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta1_encuestas_pais.sql) <br/>
+
+[Representación gráfica]: https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta1.png "Logo Title Text 2"
+
+

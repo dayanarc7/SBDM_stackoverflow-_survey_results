@@ -57,7 +57,7 @@ Representación gráfica:
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta4.png "Logo Title Text 1")
 
-#####  PREGUNTA 5:  ¿Cuál ha sido el comportamiento a través de  los años  del uso de los lenguajes en Colombia? <br/>
+#####  PREGUNTA 5:  ¿Cuál ha sido el comportamiento a través de  los años  del uso de los lenguajes en Estados Unidos? <br/>
 [Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta4_lenguajes_x_colombia_x_a%C3%B1o.sql) <br/>
 
 Representación gráfica: 

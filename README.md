@@ -75,3 +75,8 @@ Representación gráfica:
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta7.png "Logo Title Text 1")
 
+#####  PREGUNTA 8:  ¿Cuál es el rango más popular de ingresos Colombia Vs Estados Unidos? <br/>
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta8_salarios_x_estadosunidos_x_colombia.sql) <br/>
+
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta8.png "Logo Title Text 1")

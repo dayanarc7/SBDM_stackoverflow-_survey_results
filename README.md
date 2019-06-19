@@ -11,7 +11,10 @@ Fh-bigquery.stackoverflow.survey_results_2016<br/>
 Fh-bigquery.stackoverflow.survey_results_public_2017<br/>
 
 ## I. Limpieza de los datos
-#### Se realizó la limpieza año a año como aparece en los scripts: 
+#### Se realizó la limpieza año a año como aparece en los scripts y teniendo en cuenta la arquitectra inicial predefinida para la creación posterior de a bodega de datos:<br/>
+
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Arquitecturabodega.PNG) <br/>
+
 [Limpieza de datos 2011](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2011.sql)<br/>
 [Limpieza de datos 2012](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2012.sql)<br/>
 [Limpieza de datos 2013](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/1-script_clean_2013.sql)<br/>
@@ -122,3 +125,20 @@ Representación gráfica:
 
 Representación gráfica: 
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Pregunta15.png "Logo Title Text 1")
+
+## III. Diagramas Estrella, Cubo y Malinoski 
+
+## IV. MapReduce bases de datos NoSQL
+Se llevaron los datos de la bodega a una base de datos NoSQL y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina: 
+
+## IV. Predicción encuesta 2018
+Se generó un conjunto de datos nuevos a partir con al menos 50 mil registros y se predijo cuáles serían las respuestas de la nueva encuesta en el 2018. El análisis que se realizó se describe a continuación y se adjunta el algoritmo que se usó generar los registros manteniendo la línea de tendencia con base en las encuestas anteriores. <br/>
+
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sql) <br/>
+
+## IV. Adicion de 1 registro
+Se adicionó un registro a la encuesta de 2014, y se actualizó la bodega de datos y las consultas realizadas sobre la misma en adelante. <br/> 
+Se da cuenta además que inicialmente la encuesta de 2014 tenía inicialmente 7.645 registros y que termina con 7.646. 
+
+
+

@@ -129,7 +129,56 @@ Representación gráfica:
 ## III. Diagramas Estrella, Cubo y Malinoski 
 
 ## IV. MapReduce bases de datos NoSQL
-Se llevaron los datos de la bodega a una base de datos NoSQL y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina: 
+Desde la bodega de datos se hizo una query en donde sólo aparecieran los lenguajes de programación en una sola columna, se llevaron los datos de la query a una base de datos NoSQL,  y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina:  <br/>
+
+[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Tabla_leng_map_reduce.sql) <br/>
+
+> var mape = function(){emit(this["Lenguaje"],1)}<br/>
+> var reduce = function(key, values){ return Array.sum(values)}<br/>
+> db.stackoverflow.mapReduce(mape, reduce, {out: {inline : 1}})<br/>
+{<br/>
+        "results" : [<br/>
+                {
+                        "_id" : null,<br/>
+                        "value" : 207546<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "NULL",<br/>
+                        "value" : 14311<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "c#",<br/>
+                        "value" : 31457<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "c++",<br/>
+                        "value" : 19498<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "java",<br/>
+                        "value" : 34869<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "javascript",<br/>
+                        "value" : 52411<br/>
+                },<br/>
+                {<br/>
+                        "_id" : "python",<br/>
+                        "value" : 22658
+                },<br/>
+                {<br/>
+                        "_id" : "sql",<br/>
+                        "value" : 32343 <br/>
+                }<br/>
+        ],<br/>
+        "timeMillis" : 2356,<br/>
+        "counts" : {<br/>
+                "input" : 415093,<br/>
+                "emit" : 415093,<br/>
+                "reduce" : 6700,<br/>
+                "output" : 8<br/>
+        },<br/>
+        "ok" : 1<br/>
 
 ## V. Predicción encuesta 2018
 Se generó un conjunto de datos nuevos a partir con al menos 50 mil registros y se predijo cuáles serían las respuestas de la nueva encuesta en el 2018. El análisis que se realizó se describe a continuación y se adjunta el algoritmo que se usó generar los registros manteniendo la línea de tendencia con base en las encuestas anteriores. <br/>

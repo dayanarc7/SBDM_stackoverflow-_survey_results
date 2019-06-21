@@ -128,6 +128,10 @@ Representación gráfica:
 
 ## III. Diagramas Estrella, Cubo y Malinoski 
 
+Representación gráfica: 
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Imagen2.png)
+
+
 ## IV. MapReduce bases de datos NoSQL
 Desde la bodega de datos se hizo una query en donde sólo aparecieran los lenguajes de programación en una sola columna, se llevaron los datos de la query a una base de datos NoSQL,  y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina:  <br/>
 

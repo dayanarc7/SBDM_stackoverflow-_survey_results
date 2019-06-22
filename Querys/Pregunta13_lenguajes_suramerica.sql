@@ -1,7 +1,7 @@
 -- PREGUNTA 13: ¿Uso de lenguajes de programación en Suramerica en 2016?
 
-SELECT u.pais, t.año, d.Java *100.0 / total_java [Java], d.Python *100.0 / total_python [Python], d.C# *100.0 / total_c# [C#], d.[C++] *100.0 / [total_c++] [C++], 
-d.Javascript *100.0 / total_javascript [Javascript], d.Php *100.0 / total_php [PHP], d.Ruby *100.0 / total_ruby [Ruby], d.Sql *100.0 / total_sql [Sql] 
+SELECT u.pais, t.año, d.Java *100.0 / total_pais_tiempo [Java], d.Python *100.0 / total_pais_tiempo [Python], d.C# *100.0 / total_pais_tiempo [C#], d.[C++] *100.0 / total_pais_tiempo [C++], 
+d.Javascript *100.0 / total_pais_tiempo [Javascript], d.Php *100.0 / total_pais_tiempo [PHP], d.Ruby *100.0 / total_pais_tiempo [Ruby], d.Sql *100.0 / total_pais_tiempo [Sql] 
 FROM
 (
 	SELECT d.FK_tiempo, d.FK_ubicacion, SUM(lenguaje_java) [Java], SUM(lenguaje_python) [Python], SUM(lenguaje_c#) [C#], SUM([lenguaje_c++]) [C++],
@@ -12,9 +12,9 @@ FROM
 INNER JOIN tiempo t ON t.id_tiempo = d.FK_tiempo
 INNER JOIN ubicacion u ON u.id_ubicacion = d.FK_ubicacion
 INNER JOIN (
-	SELECT SUM(lenguaje_java) total_java, SUM(lenguaje_python) total_python , SUM(lenguaje_c#) total_c#, SUM([lenguaje_c++]) [total_c++], SUM(lenguaje_javascript) total_javascript , 
-	SUM(lenguaje_php) total_php, SUM(lenguaje_ruby) total_ruby , SUM(lenguaje_sql) total_sql
+	SELECT fk_ubicacion, fk_tiempo, SUM(lenguaje_java) + SUM(lenguaje_python) + SUM(lenguaje_c#) + SUM([lenguaje_c++]) + SUM(lenguaje_javascript) + SUM(lenguaje_ruby) + SUM(lenguaje_php) + SUM(lenguaje_sql) total_pais_tiempo
 	FROM dw_stackoverflow
-) s ON d.FK_ubicacion = u.id_ubicacion
+	GROUP BY fk_ubicacion, fk_tiempo
+) s ON d.FK_ubicacion = s.fk_ubicacion AND s.fk_tiempo = d.fk_tiempo
 WHERE pais IN ('Colombia', 'Chile','Brasil' ,'Argentina' , 'Venezuela'  ,'Uruguay' , 'Bolivia', 'Paraguay' , 'Ecuador') AND t.año =2016
 ORDER BY u.pais, t.año

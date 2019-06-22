@@ -1,6 +1,6 @@
 -- PREGUNTA 14: ¿Ocupaciones en Suramerica en 2016?
 
-SELECT u.pais, t.año, ocupacion_database*100.0 / total_database [Database Administrator], ocupacion_desktop *100.0 / total_desktop [Desktop Developer], ocupacion_Embedded *100.0 / total_Embedded [Embedded Developer], ocupacion_staff *100.0 / total_Staff [System Developer], ocupacion_web *100.0 / total_web [Web Developer]
+SELECT u.pais, t.año, ocupacion_database*100.0 / total_pais [Database Administrator], ocupacion_desktop *100.0 / total_pais [Desktop Developer], ocupacion_Embedded *100.0 / total_pais [Embedded Developer], ocupacion_staff *100.0 / total_pais [System Developer], ocupacion_web *100.0 / total_pais [Web Developer]
 FROM
 (
 	SELECT d.FK_tiempo, d.FK_ubicacion, SUM(ocupacion_Database) [ocupacion_database], SUM(ocupacion_Desktop) [ocupacion_desktop], SUM(ocupacion_Embedded) [ocupacion_Embedded], SUM(ocupacion_Staff) [ocupacion_staff],
@@ -11,8 +11,9 @@ FROM
 INNER JOIN tiempo t ON t.id_tiempo = d.FK_tiempo
 INNER JOIN ubicacion u ON u.id_ubicacion = d.FK_ubicacion
 INNER JOIN (
-	SELECT SUM(ocupacion_Database) total_database, SUM(ocupacion_Desktop) total_desktop , SUM(ocupacion_Embedded) total_Embedded, SUM(ocupacion_Staff) total_Staff, SUM(ocupacion_Web) total_Web
+	SELECT fk_ubicacion, fk_tiempo,SUM(ocupacion_Database) + SUM(ocupacion_Desktop) + SUM(ocupacion_Embedded) + SUM(ocupacion_Staff) + SUM(ocupacion_Web) total_pais
 	FROM dw_stackoverflow
-) s ON d.FK_ubicacion = u.id_ubicacion
+	GROUP BY fk_ubicacion, fk_tiempo
+) s ON d.FK_ubicacion = s.FK_ubicacion AND s.fk_tiempo = d.fk_tiempo
 WHERE pais IN ('Colombia', 'Chile','Brasil' ,'Argentina' , 'Venezuela'  ,'Uruguay' , 'Bolivia', 'Paraguay' , 'Ecuador') AND t.año =2016
-ORDER BY u.pais
+ORDER BY u.pais, t.año

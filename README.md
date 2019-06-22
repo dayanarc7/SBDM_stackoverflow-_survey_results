@@ -16,6 +16,12 @@ Fh-bigquery.stackoverflow.survey_results_2015<br/>
 Fh-bigquery.stackoverflow.survey_results_2016<br/>
 Fh-bigquery.stackoverflow.survey_results_public_2017<br/>
 
+La información completa del desarrollo de este trabajo está disponible en: <br/>
+
+[Paquete_Stackoverflow_SQL](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Paquete_SQL.bacpac)<br/>
+
+
+
 ## I. Limpieza de los datos
 #### Se realizó la limpieza año a año como aparece en los scripts y teniendo en cuenta la arquitectra inicial predefinida para la creación posterior de a bodega de datos:<br/>
 

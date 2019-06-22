@@ -234,6 +234,7 @@ Se adicionó un registro a la encuesta de 2014, y se actualizó la bodega de dat
 Se da cuenta además que inicialmente la encuesta de 2014 tenía inicialmente 7.645 registros y que termina con 7.646. <br/>
 
 [Rutina](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sql) <br/>
+[DW_actualizada] (https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/dw_stackoverflow_prediccion.csv)
 
 ## VII. Modificación de datos operativos
 Se generó una rutina que actualizara el indicador del total de programadores que sabían un lenguaje en particular y modificara los “datos operativos” y la bodega de datos de manera coherente para corresponderse con el.   

@@ -2,6 +2,7 @@
 
 SELECT u.pais, t.año, d.Java *100.0 / total_pais_tiempo [Java], d.Python *100.0 / total_pais_tiempo [Python], d.C# *100.0 / total_pais_tiempo [C#], d.[C++] *100.0 / total_pais_tiempo [C++], 
 d.Javascript *100.0 / total_pais_tiempo [Javascript], d.Php *100.0 / total_pais_tiempo [PHP], d.Ruby *100.0 / total_pais_tiempo [Ruby], d.Sql *100.0 / total_pais_tiempo [Sql] 
+, s.total_pais_tiempo
 FROM
 (
 	SELECT d.FK_tiempo, d.FK_ubicacion, SUM(lenguaje_java) [Java], SUM(lenguaje_python) [Python], SUM(lenguaje_c#) [C#], SUM([lenguaje_c++]) [C++],
@@ -12,7 +13,7 @@ FROM
 INNER JOIN tiempo t ON t.id_tiempo = d.FK_tiempo
 INNER JOIN ubicacion u ON u.id_ubicacion = d.FK_ubicacion
 INNER JOIN (
-	SELECT fk_ubicacion, fk_tiempo, SUM(lenguaje_java) + SUM(lenguaje_python) + SUM(lenguaje_c#) + SUM([lenguaje_c++]) + SUM(lenguaje_javascript) + SUM(lenguaje_ruby) + SUM(lenguaje_php) + SUM(lenguaje_sql) total_pais_tiempo
+	SELECT fk_ubicacion, fk_tiempo, COUNT(*) total_pais_tiempo
 	FROM dw_stackoverflow
 	GROUP BY fk_ubicacion, fk_tiempo
 ) s ON d.FK_ubicacion = s.fk_ubicacion AND s.fk_tiempo = d.fk_tiempo

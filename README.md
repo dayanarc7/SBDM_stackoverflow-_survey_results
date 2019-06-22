@@ -16,7 +16,7 @@ Fh-bigquery.stackoverflow.survey_results_2015<br/>
 Fh-bigquery.stackoverflow.survey_results_2016<br/>
 Fh-bigquery.stackoverflow.survey_results_public_2017<br/>
 
-La información completa del desarrollo de este trabajo está disponible en: <br/>
+La información completa de las tablas utilizadas y creadas para el desarrollo de este trabajo está disponible en: <br/>
 
 [Paquete_Stackoverflow_SQL](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Paquete_SQL.bacpac)<br/>
 

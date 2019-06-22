@@ -239,7 +239,7 @@ Se da cuenta además que inicialmente la encuesta de 2014 tenía inicialmente 7.
 [DW_actualizada](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/dw_stackoverflow_prediccion.csv) <br/>
 
 ## VII. Modificación de datos operativos
-Se generó una rutina que actualizara el indicador del total de programadores que sabían un lenguaje en particular y modificara los “datos operativos” y la bodega de datos de manera coherente para corresponderse con el.   
+Se generó una rutina que actualizara el indicador del total de programadores que sabían un lenguaje en particular (Javascript) para Colombia en el año 2016 y modificara los demás datos y la bodega de manera coherente para corresponderse con el.   
 
 [Rutina](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/modificar_indicador.sql) <br/>
 

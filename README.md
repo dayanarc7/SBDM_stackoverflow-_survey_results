@@ -175,9 +175,10 @@ El modelo Malinowski es muy similar al modelo de estrella, sólo que acá se bus
 
 
 ## IV. MapReduce bases de datos NoSQL
-Desde la bodega de datos se hizo una query en donde sólo aparecieran los lenguajes de programación en una sola columna, se llevaron los datos de la query a una base de datos NoSQL,  y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina:  <br/>
+Desde la bodega de datos se hizo un filtro en donde sólo aparecieran los lenguajes de programación en una sola columna, se llevaron los datos desde la query (filtro) a una base de datos NoSQL,  y se aplicó MapReduce para agrupar el número de programadores por lenguaje de programación. Se muestra a continuación la rutina:  <br/>
 
 [Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Tabla_leng_map_reduce.sql) <br/>
+[Archivo.JSON](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/lenguaje.json) <br/>
 
 > var mape = function(){emit(this["Lenguaje"],1)}<br/>
 > var reduce = function(key, values){ return Array.sum(values)}<br/>

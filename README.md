@@ -1,5 +1,7 @@
 # Trabajo Final Sistemas de Bases de Datos Masivos 
 
+Autores: MILADYS AGUILERA , MARVIN SIERRA, DAYANA ROMAN <br/><br/> 
+
 Con el crecimiento del Big Data y el desarrollo de software, ha surgido la necesidad de analizar este importante sector que ha marcado un antes y un después en la era tecnológica. Para ello desde el 2011 se implementa la encuesta stackoverflow, con el fin de conocer tendencias, gustos y opiniones del mundo del desarrollo del software. Esta encuesta se ha convertido en un referente gracias a la acogida que ha tenido a nivel mundial desde su implementación, por ejemplo, para el año 2017 aproximadamente 64.000 desarrolladores respondieron la encuesta, una muestra bastante significativa para poder inferir interesantes conclusiones, como: rankings salariales, profesiones mejor pagadas, softwares con mayor uso, países con más desarrolladores, entre otras.<br/> <br/> A continuación, se aplicarán algunos conocimientos para el manejo de bases de datos masivos con el fin de construir una bodega de datos, donde los datos históricos de la encuesta se tendrán limpios y estandarizados en 5 dimensiones que son de nuestro interés y que se encuentran como campos en común para los registros desde el año 2011 hasta 2017.<br/> Dichas dimensiones son:<br/><br/> 
 
 ###### Año de realización de la encuesta<br/><br/> Ubicación de los encuestados<br/><br/> Lenguaje de programación que manejan <br/><br/>  Experiencia <br/><br/> Salarios devengados<br/><br/>  Ocupación <br/><br/> 

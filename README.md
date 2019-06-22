@@ -128,8 +128,36 @@ Representación gráfica:
 
 ## III. Diagramas Estrella, Cubo y Malinoski 
 
-Representación gráfica: 
+De acuerdo a las dimensiones definidas anteriormente se construyeron distintos modelos dimensionales que representan gráficamente la bodega de datos, estos modelos son:<br/>
+
+##### Modelo de cubo: <br/>
+
+En esta representación se debe definir claramente un hecho particular que será representado en las dimensiones del cubo. Para este caso el hecho es:<br/>
+
+Número de programadores con mayor salario en los tres lenguajes más utilizados en los tres últimos años.<br/>
+
+Es así, como se hace uso de la dimensión tiempo, representada para el hecho en los últimos 3 años, es decir, 2015 - 2016 y 2017.<br/>
+La segunda dimensión de interés es el lenguaje de programación, para este caso se eligen los más populares, que son: Python (P), Java Script (JS) y SQL (S).<br/>
+La última dimensión es el salario, en este caso se toman los tres últimos rangos que representan los salarios más altos, estos rangos son:<br/>
+
+R1: 100.000 – 120.000 USD<br/>
+R2: 120.000 – 140.000 USD<br/>
+R3: > 140.000 USD<br/>
+
+A continuación, se presenta el cubo con sus respectivas dimensiones:<br/>
+
 ![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/Imagen2.png)
+
+##### Modelo estrella<br/>
+
+En este modelo se ubica el hecho de interés y sus medidas en el centro. Cada una de las dimensiones con sus respectivas medidas se ubican alrededor del hecho, de tal manera que se identifique claramente que compone cada una de las dimensiones y el modo de conectar las relaciones con el hecho. Es decir, se establece una relación de muchos a muchos, muchos a 1 o 1 a muchos. La relación de muchos a muchos se presenta cuando el hecho puede tomar muchos valores de la dimensión y viceversa, por ejemplo, en este caso la dimensión lenguaje y el número de encuestados presenta este tipo de relación, ya que muchos encuestados pueden manejar muchos lenguajes y muchos lenguajes pueden ser manejados por muchos desarrolladores.<br/>
+
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/estrella.png)<br/>
+
+##### Modelo Malinowski <br/>
+El modelo Malinowski es muy similar al modelo de estrella, sólo que acá se busca representar con mayor detalle una dimensión en especifico y no se asignan las medidas y relaciones entre las dimensiones y el hecho.<br/>
+
+![alt text](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Images/malinoswki.png)<br/>
 
 
 ## IV. MapReduce bases de datos NoSQL

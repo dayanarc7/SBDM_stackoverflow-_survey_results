@@ -221,16 +221,16 @@ Desde la bodega de datos se hizo una query en donde sólo aparecieran los lengua
 ## V. Predicción encuesta 2018
 Se generó un conjunto de datos nuevos a partir con al menos 50 mil registros y se predijo cuáles serían las respuestas de la nueva encuesta en el 2018. El análisis que se realizó se describe a continuación y se adjunta el algoritmo que se usó generar los registros manteniendo la línea de tendencia con base en las encuestas anteriores. <br/>
 
-[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sql) <br/>
+[Notebook](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Punto_5.ipynb) <br/>
 
 ## VI. Adicion de 1 registro
 Se adicionó un registro a la encuesta de 2014, y se actualizó la bodega de datos y las consultas realizadas sobre la misma en adelante. <br/> 
 Se da cuenta además que inicialmente la encuesta de 2014 tenía inicialmente 7.645 registros y que termina con 7.646. <br/>
 
-[Query](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sql) <br/>
+[Rutina](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/Querys/Pregunta15_paises_ingresos_altos.sql) <br/>
 
 ## VII. Modificación de datos operativos
-Se generó una rutina que actualizar el _____________  y modificara los “datos operativos” y la bodega de datos de manera coherente para corresponderse con el _______.   
+Se generó una rutina que actualizara el indicador del total de programadores que sabían un lenguaje en particular y modificara los “datos operativos” y la bodega de datos de manera coherente para corresponderse con el.   
 
-
+[Rutina](https://github.com/dayanarc7/SBDM_stackoverflow-_survey_results/blob/master/modificar_indicador.sql) <br/>
 
